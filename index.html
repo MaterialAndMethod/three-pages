@@ -11,41 +11,140 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <main class="shell">
-    <section class="hero">
-      <p class="eyebrow">Working title</p>
-      <h1>Three</h1>
-      <p class="lede">
-        A private, focused to do list app built around choosing and finishing three meaningful tasks each day.
-      </p>
-      <div class="actions">
-        <a href="./support/">Support</a>
-        <a href="./privacy/">Privacy</a>
+  <div class="grain">
+    <header class="site-header shell">
+      <div class="site-header__inner">
+        <div class="site-header__intro">
+          <div class="site-meta">
+            <span>Indianapolis, IN</span>
+            <span>Privacy-First Productivity App</span>
+          </div>
+          <a class="brand" href="./">
+            <span class="editorial-highlight">Three</span>
+          </a>
+          <p class="tagline">
+            A focused to do list app for people who want to choose what matters and finish three meaningful tasks each day.
+          </p>
+        </div>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="./" aria-current="page">Home</a>
+          <a href="./support/">Support</a>
+          <a href="./privacy/">Privacy</a>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section class="panel">
-      <h2>Built to help you move forward</h2>
-      <p>
-        Three is designed for people who feel overwhelmed by traditional task managers. Instead of pushing endless list accumulation,
-        it helps you prioritize by importance and urgency, then commit to just three tasks for today.
-      </p>
-    </section>
+    <main>
+      <section class="shell hero">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <p class="editorial-eyebrow editorial-accent">Private by design</p>
+            <h1>
+              Focus on three meaningful tasks today, then move forward without the weight of an endless list.
+            </h1>
+            <p class="editorial-copy">
+              Three is built for iPhone and iPad with a calm, lightweight workflow: prioritize by important and urgent, choose three tasks for today, and let unfinished work carry forward automatically.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="./support/">Get Support</a>
+              <a class="editorial-link" href="./privacy/">Read Privacy Policy</a>
+            </div>
+          </div>
 
-    <section class="grid">
-      <article class="card">
-        <h3>Focus over accumulation</h3>
-        <p>Choose three meaningful tasks for today and keep attention on finishing, not organizing.</p>
-      </article>
-      <article class="card">
-        <h3>Private by design</h3>
-        <p>No ads, no tracking, no unnecessary data collection. iCloud sync keeps data with the user.</p>
-      </article>
-      <article class="card">
-        <h3>Built for iPhone and iPad</h3>
-        <p>A native Apple experience designed for portrait and landscape use across supported devices.</p>
-      </article>
-    </section>
-  </main>
+          <section class="hero-panel editorial-panel" aria-label="Three summary">
+            <div class="hero-panel__visual">
+              <p class="hero-panel__eyebrow editorial-meta">Daily focus</p>
+              <div class="hero-panel__count" aria-hidden="true">1&nbsp;&nbsp;2&nbsp;&nbsp;3</div>
+              <p class="hero-panel__caption">
+                Built to reduce overwhelm by narrowing attention to three tasks that matter now.
+              </p>
+            </div>
+
+            <div class="hero-panel__details">
+              <div>
+                <p class="editorial-meta editorial-accent">Current approach</p>
+                <p>
+                  Importance and urgency guide prioritization, while the main task list stays lightweight and fast to scan.
+                </p>
+              </div>
+              <div>
+                <p class="editorial-meta editorial-accent">Privacy promise</p>
+                <p>
+                  No ads, no tracking, and no unnecessary data collection. Sync is intended to stay within the Apple ecosystem through iCloud.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="shell section">
+        <div class="section-heading">
+          <p class="editorial-eyebrow">Core Ideas</p>
+          <h2>Built to feel clear, calm, and immediate.</h2>
+        </div>
+
+        <div class="feature-list">
+          <article class="feature-row">
+            <p class="feature-row__meta editorial-meta">01</p>
+            <div>
+              <h3>Prioritize by important and urgent</h3>
+              <p class="editorial-copy">
+                Tasks are organized around what matters most instead of turning the app into a scheduling system or a long-term archive.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-row">
+            <p class="feature-row__meta editorial-meta">02</p>
+            <div>
+              <h3>Choose just three for today</h3>
+              <p class="editorial-copy">
+                Daily focus is limited on purpose so the product encourages completion, not task accumulation or productivity theater.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-row">
+            <p class="feature-row__meta editorial-meta">03</p>
+            <div>
+              <h3>Keep history short and useful</h3>
+              <p class="editorial-copy">
+                Completed work is kept for a limited window, then removed automatically so the experience stays oriented around the present.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <div>
+          <p class="editorial-meta footer-muted">Overview</p>
+          <p class="footer-title">Three</p>
+          <p class="footer-copy">
+            A private, focused to do list app built around choosing and finishing three meaningful tasks each day.
+          </p>
+        </div>
+
+        <div>
+          <p class="editorial-meta footer-muted">Email</p>
+          <a class="footer-email" href="mailto:apps@materialandmethod.com">apps@materialandmethod.com</a>
+          <p class="footer-copy">Ben Wilson. Indianapolis, IN.</p>
+        </div>
+
+        <div>
+          <p class="editorial-meta footer-muted">Pages</p>
+          <ul class="footer-links">
+            <li><a href="./">Home</a></li>
+            <li><a href="./support/">Support</a></li>
+            <li><a href="./privacy/">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
