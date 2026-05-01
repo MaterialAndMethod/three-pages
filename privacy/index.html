@@ -42,7 +42,7 @@
           <div>
             <h1>Privacy is a product requirement for Three, not an afterthought or a marketing claim.</h1>
             <p class="editorial-copy">
-              Three stores the information needed to run the task list on your devices. It does not use ads, analytics, third-party tracking, or developer-operated servers for your task data.
+              Three stores the information needed to run the task list on your devices, plus a small local snapshot used by the Home Screen widget. It does not use ads, analytics, third-party tracking, or developer-operated servers for your task data.
             </p>
           </div>
         </div>
@@ -64,6 +64,7 @@
               <li>Focus selection and focus position state</li>
               <li>Completion state and timestamps required for app behavior</li>
               <li>Small app preferences, such as onboarding and display settings</li>
+              <li>Home Screen widget snapshot data, limited to today's selected task titles, task identifiers, display positions, focus day, and snapshot date</li>
             </ul>
           </section>
 
@@ -74,6 +75,7 @@
               <li>If iCloud is available, task data syncs through the user's private iCloud account using Apple's CloudKit service.</li>
               <li>The developer does not operate a task-data server and does not have access to the contents of your tasks.</li>
               <li>No separate Three account is required.</li>
+              <li>The widget reads a minimal JSON snapshot from the local App Group container <code>group.com.materialandmethod.three</code>. The widget does not read the main Core Data store and does not transmit widget data.</li>
             </ul>
           </section>
 
@@ -95,6 +97,7 @@
             <ul class="content-list">
               <li>Active tasks remain until you edit, complete, or delete them.</li>
               <li>Completed tasks are retained for 14 days, then permanently removed automatically.</li>
+              <li>The widget snapshot is overwritten as the app updates today's selected tasks. When the snapshot is no longer for the current day, the widget stops displaying those tasks.</li>
               <li>Deleting the app removes local app data from that device. iCloud-synced data may remain available through your iCloud account according to Apple's iCloud behavior and settings.</li>
               <li>Because the developer does not have access to your task data, deletion requests for task contents must be handled on your device or through your Apple/iCloud account controls.</li>
             </ul>
@@ -110,7 +113,7 @@
           <section class="policy-section">
             <p class="editorial-meta">Third parties</p>
             <p class="editorial-copy">
-              Three uses Apple platform services, including local device storage and iCloud/CloudKit sync. Three does not include third-party analytics, advertising SDKs, data brokers, or tracking services. If future versions add a third-party service that can access user data, this policy and the App Store privacy disclosures will be updated before release.
+              Three uses Apple platform services, including local device storage, iCloud/CloudKit sync, App Groups, and WidgetKit. Three does not include third-party analytics, advertising SDKs, data brokers, or tracking services. If future versions add a third-party service that can access user data, this policy and the App Store privacy disclosures will be updated before release.
             </p>
           </section>
         </div>
